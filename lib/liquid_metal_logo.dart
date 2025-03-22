@@ -41,13 +41,13 @@ class _Logo extends StatelessWidget {
     return ConstrainedBox(
       constraints: const BoxConstraints(
         maxHeight: 500,
-        maxWidth: 500,
+        maxWidth: 800,
       ),
       child: AspectRatio(
         aspectRatio: 1,
         child: Center(
           child: ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 400),
+            constraints: const BoxConstraints(maxWidth: 700),
             child: AspectRatio(
               aspectRatio: 1,
               child: ListenableBuilder(

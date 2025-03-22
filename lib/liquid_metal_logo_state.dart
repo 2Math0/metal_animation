@@ -48,26 +48,26 @@ enum LiquidMetalLogoType {
     icon: 'assets/images/svg/flutter.svg',
     label: 'Flutter',
   ),
-  // google(
-  //   asset: 'assets/images/google.png',
-  //   icon: 'assets/images/svg/google.svg',
-  //   label: 'Google',
-  // ),
-  // apple(
-  //   asset: 'assets/images/apple.png',
-  //   icon: 'assets/images/svg/apple.svg',
-  //   label: 'Apple',
-  // ),
-  // firebase(
-  //   asset: 'assets/images/firebase.png',
-  //   icon: 'assets/images/svg/firebase.svg',
-  //   label: 'Firebase',
-  // ),
-  // gemini(
-  //   asset: 'assets/images/gemini.png',
-  //   icon: 'assets/images/svg/gemini.svg',
-  //   label: 'Gemini',
-  // ),
+  google(
+    asset: 'assets/images/google.png',
+    icon: 'assets/images/svg/google.svg',
+    label: 'Google',
+  ),
+  apple(
+    asset: 'assets/images/apple.png',
+    icon: 'assets/images/svg/apple.svg',
+    label: 'Apple',
+  ),
+  firebase(
+    asset: 'assets/images/firebase.png',
+    icon: 'assets/images/svg/firebase.svg',
+    label: 'Firebase',
+  ),
+  gemini(
+    asset: 'assets/images/gemini.png',
+    icon: 'assets/images/svg/gemini.svg',
+    label: 'Gemini',
+  ),
   ;
 
   final String asset;

@@ -12,6 +12,11 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
+      - name: Setup Git User
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
@@ -31,3 +36,4 @@ jobs:
         with:
           branch: gh-pages
           folder: build/web
+          clean: true  # Force recreate the branch

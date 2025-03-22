@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class LiquidMetalLogoState extends ChangeNotifier {
   LiquidMetalLogoState()
-      : _type = LiquidMetalLogoType.flutter,
+      : _type = LiquidMetalLogoType.twoMath,
         _background = LiquidMetalLogoBackground.metal;
 
   LiquidMetalLogoType _type;
@@ -33,41 +33,52 @@ class LiquidMetalLogoState extends ChangeNotifier {
 }
 
 enum LiquidMetalLogoType {
-  flutter,
-  google,
-  apple,
-  firebase,
-  gemini;
+  twoMath(
+    asset: 'assets/images/2m.png',
+    icon: 'assets/images/svg/2m.svg',
+    label: '2Math👑',
+  ),
+  ezzo(
+    asset: 'assets/images/ezzo.png',
+    icon: 'assets/images/svg/ezzo.svg',
+    label: 'Ezzo',
+  ),
+  flutter(
+    asset: 'assets/images/flutter.png',
+    icon: 'assets/images/svg/flutter.svg',
+    label: 'Flutter',
+  ),
+  // google(
+  //   asset: 'assets/images/google.png',
+  //   icon: 'assets/images/svg/google.svg',
+  //   label: 'Google',
+  // ),
+  // apple(
+  //   asset: 'assets/images/apple.png',
+  //   icon: 'assets/images/svg/apple.svg',
+  //   label: 'Apple',
+  // ),
+  // firebase(
+  //   asset: 'assets/images/firebase.png',
+  //   icon: 'assets/images/svg/firebase.svg',
+  //   label: 'Firebase',
+  // ),
+  // gemini(
+  //   asset: 'assets/images/gemini.png',
+  //   icon: 'assets/images/svg/gemini.svg',
+  //   label: 'Gemini',
+  // ),
+  ;
 
-  String get asset {
-    return switch (this) {
-      flutter => 'assets/images/flutter.png',
-      google => 'assets/images/google.png',
-      apple => 'assets/images/apple.png',
-      firebase => 'assets/images/firebase.png',
-      gemini => 'assets/images/gemini.png',
-    };
-  }
+  final String asset;
+  final String icon;
+  final String label;
 
-  String get icon {
-    return switch (this) {
-      flutter => 'assets/images/svg/flutter.svg',
-      google => 'assets/images/svg/google.svg',
-      apple => 'assets/images/svg/apple.svg',
-      firebase => 'assets/images/svg/firebase.svg',
-      gemini => 'assets/images/svg/gemini.svg',
-    };
-  }
-
-  String get label {
-    return switch (this) {
-      flutter => 'Flutter',
-      google => 'Google',
-      apple => 'Apple',
-      firebase => 'Firebase',
-      gemini => 'Gemini',
-    };
-  }
+  const LiquidMetalLogoType({
+    required this.asset,
+    required this.icon,
+    required this.label,
+  });
 }
 
 enum LiquidMetalLogoBackground {

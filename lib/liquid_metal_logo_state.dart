@@ -43,6 +43,16 @@ enum LiquidMetalLogoType {
     icon: 'assets/images/svg/ezzo.svg',
     label: 'Ezzo',
   ),
+  fady(
+    asset: 'assets/images/fady.png',
+    icon: 'assets/images/svg/fady.svg',
+    label: 'Fady',
+  ),
+  romany(
+    asset: 'assets/images/romany.png',
+    icon: 'assets/images/svg/romany.svg',
+    label: 'Romany',
+  ),
   flutter(
     asset: 'assets/images/flutter.png',
     icon: 'assets/images/svg/flutter.svg',

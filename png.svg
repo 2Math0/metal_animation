@@ -1,0 +1,7 @@
+<svg width="350" height="392" viewBox="0 0 300 392" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <filter id="blur">
+    <feGaussianBlur stdDeviation="1"/>
+  </filter>
+  <text x="50%" y="50%" font-family="Pacifico, cursive" font-size="130" fill="black" font-weight="bold" text-anchor="middle" dominant-baseline="middle" filter="url(#blur)">Fady
+  </text>
+</svg>
